@@ -1,1 +1,1 @@
-docker run --rm -it -p 8888:8888 -v c:/Users/tev/projects:/home/jovyan/work jupyter-env start.sh jupyter notebook
+docker run --rm -it -p 8888:8888 -v jupyter_volume:/home/jovyan/work --name jupyter-notebook jupyter-env start.sh jupyter notebook
